@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		166E44CB1F8D23BC00959EE2 /* mandalaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E44CA1F8D23BC00959EE2 /* mandalaView.swift */; };
+		166E44CD1F8D241800959EE2 /* mandalaScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166E44CC1F8D241800959EE2 /* mandalaScreen.storyboard */; };
 		2279CEE91F8BF3E9003D57AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */; };
 		2279CEEB1F8BF3E9003D57AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEEA1F8BF3E9003D57AA /* ViewController.swift */; };
 		2279CEEE1F8BF3E9003D57AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2279CEEC1F8BF3E9003D57AA /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		166E44CA1F8D23BC00959EE2 /* mandalaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mandalaView.swift; sourceTree = "<group>"; };
+		166E44CC1F8D241800959EE2 /* mandalaScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mandalaScreen.storyboard; sourceTree = "<group>"; };
+		166E44CE1F8D252400959EE2 /* 86e2a992a86ddc22a7e4a7cd227fa487--tattoo-cover-mandala-tattoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "86e2a992a86ddc22a7e4a7cd227fa487--tattoo-cover-mandala-tattoo.jpg"; sourceTree = "<group>"; };
 		2279CEE51F8BF3E9003D57AA /* NelsonMandala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NelsonMandala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2279CEEA1F8BF3E9003D57AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 			children = (
 				2279CEE71F8BF3E9003D57AA /* NelsonMandala */,
 				2279CEE61F8BF3E9003D57AA /* Products */,
+				166E44CE1F8D252400959EE2 /* 86e2a992a86ddc22a7e4a7cd227fa487--tattoo-cover-mandala-tattoo.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +62,7 @@
 		2279CEE71F8BF3E9003D57AA /* NelsonMandala */ = {
 			isa = PBXGroup;
 			children = (
+				166E44CA1F8D23BC00959EE2 /* mandalaView.swift */,
 				2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */,
 				2279CEEA1F8BF3E9003D57AA /* ViewController.swift */,
 				2279CEEC1F8BF3E9003D57AA /* Main.storyboard */,
@@ -63,6 +70,7 @@
 				2279CEF41F8BF3E9003D57AA /* LaunchScreen.storyboard */,
 				2279CEF71F8BF3E9003D57AA /* Info.plist */,
 				2279CEEF1F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld */,
+				166E44CC1F8D241800959EE2 /* mandalaScreen.storyboard */,
 			);
 			path = NelsonMandala;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2279CEF61F8BF3E9003D57AA /* LaunchScreen.storyboard in Resources */,
+				166E44CD1F8D241800959EE2 /* mandalaScreen.storyboard in Resources */,
 				2279CEF31F8BF3E9003D57AA /* Assets.xcassets in Resources */,
 				2279CEEE1F8BF3E9003D57AA /* Main.storyboard in Resources */,
 			);
@@ -140,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2279CEF11F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld in Sources */,
+				166E44CB1F8D23BC00959EE2 /* mandalaView.swift in Sources */,
 				2279CEEB1F8BF3E9003D57AA /* ViewController.swift in Sources */,
 				2279CEE91F8BF3E9003D57AA /* AppDelegate.swift in Sources */,
 			);
@@ -279,7 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7J47JG8UC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NelsonMandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauricio.NelsonMandala;
@@ -294,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7J47JG8UC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NelsonMandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauricio.NelsonMandala;

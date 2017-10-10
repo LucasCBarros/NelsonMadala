@@ -32,6 +32,9 @@
                                         <state key="normal" title="Go!">
                                             <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="5qY-ME-F8q" kind="show" id="TDy-aK-bM3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,6 +51,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="127.28635682158921"/>
+        </scene>
+        <!--mandalaScreen-->
+        <scene sceneID="c3i-0K-1IH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="mandalaScreen" referencedIdentifier="mandalaScreen" id="5qY-ME-F8q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJA-RT-1iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="127"/>
         </scene>
     </scenes>
 </document>

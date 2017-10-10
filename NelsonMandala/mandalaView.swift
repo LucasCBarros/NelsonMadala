@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable class MandalaView : UIView {
     
     
-    var proportion: Float = 1
+ var proportion: Float = 0.5
 
 
     public func calculateProportion(currentTime: Int, totalTime: Int){
@@ -22,7 +22,7 @@ import UIKit
         
         print("draw")
         
-        let context: CGContext! = UIGraphicsGetCurrentContext()
+        let _ : CGContext! = UIGraphicsGetCurrentContext()
 
         let rectCenter = CGPoint(x: rect.origin.x + rect.size.width/2, y: rect.origin.y + rect.size.height/2)
         
