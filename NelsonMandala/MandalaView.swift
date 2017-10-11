@@ -11,11 +11,11 @@ import UIKit
 @IBDesignable class MandalaView : UIView {
     
     
- var proportion: Float = 0.5
+ var proportion = 0.5
 
-
-    public func calculateProportion(currentTime: Int, totalTime: Int){
-        proportion = Float(currentTime) / Float(totalTime)
+    public func calculateProportion(currentTime: TimeInterval, totalTime: TimeInterval){
+        proportion = min(1, currentTime / totalTime)
+        setNeedsDisplay()
     }
     
     override func draw(_ rect: CGRect) {
@@ -36,10 +36,6 @@ import UIKit
         
         //pathComplete.addClip()
         //pathComplete.fill(with: .clear, alpha: 1)
-       
-        
-        
-        
     }
     
 }

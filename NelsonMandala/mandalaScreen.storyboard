@@ -13,7 +13,7 @@
         <!--MandalaVC-->
         <scene sceneID="wrU-Rw-FK2">
             <objects>
-                <viewController storyboardIdentifier="mandalaScreen" id="XFf-nN-CFk" userLabel="MandalaVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mandalaScreen" title="MandalaScreen" id="XFf-nN-CFk" userLabel="MandalaVC" customClass="MandalaViewController" customModule="NelsonMandala" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="noF-f5-vNS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="proportion">
-                                        <real key="value" value="0.20000000000000001"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -46,6 +46,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ohp-sT-97G"/>
                     </view>
+                    <connections>
+                        <outlet property="mandalaImage" destination="DeE-wd-wx6" id="OgI-Rn-AMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9G6-my-2EK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var goButton: UIButton!
     
     let time = Array(1...10)
-    var selectedTime:Int = 0
+    var selectedTime = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,13 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "BeginMandala",
+            let mandalaViewController = segue.destination as? MandalaViewController {
+                mandalaViewController.totalTime = selectedTime
+        }
     }
 
 }
@@ -44,7 +51,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedTime = time[row]
+        selectedTime = Double(time[row])
     }
     
 }
