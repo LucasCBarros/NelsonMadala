@@ -13,7 +13,6 @@
 		2279CEE91F8BF3E9003D57AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */; };
 		2279CEEB1F8BF3E9003D57AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEEA1F8BF3E9003D57AA /* ViewController.swift */; };
 		2279CEEE1F8BF3E9003D57AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2279CEEC1F8BF3E9003D57AA /* Main.storyboard */; };
-		2279CEF11F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEEF1F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld */; };
 		2279CEF31F8BF3E9003D57AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2279CEF21F8BF3E9003D57AA /* Assets.xcassets */; };
 		2279CEF61F8BF3E9003D57AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2279CEF41F8BF3E9003D57AA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2279CEEA1F8BF3E9003D57AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2279CEED1F8BF3E9003D57AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2279CEF01F8BF3E9003D57AA /* NelsonMandala.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NelsonMandala.xcdatamodel; sourceTree = "<group>"; };
 		2279CEF21F8BF3E9003D57AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2279CEF51F8BF3E9003D57AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2279CEF71F8BF3E9003D57AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				2279CEF21F8BF3E9003D57AA /* Assets.xcassets */,
 				2279CEF41F8BF3E9003D57AA /* LaunchScreen.storyboard */,
 				2279CEF71F8BF3E9003D57AA /* Info.plist */,
-				2279CEEF1F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld */,
 			);
 			path = NelsonMandala;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				221459651F8D6B8600AAD240 /* MandalaViewController.swift in Sources */,
-				2279CEF11F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld in Sources */,
 				166E44CB1F8D23BC00959EE2 /* MandalaView.swift in Sources */,
 				2279CEEB1F8BF3E9003D57AA /* ViewController.swift in Sources */,
 				2279CEE91F8BF3E9003D57AA /* AppDelegate.swift in Sources */,
@@ -293,7 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7J47JG8UC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NelsonMandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauricio.NelsonMandala;
@@ -308,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7J47JG8UC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NelsonMandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauricio.NelsonMandala;
@@ -340,19 +336,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2279CEEF1F8BF3E9003D57AA /* NelsonMandala.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2279CEF01F8BF3E9003D57AA /* NelsonMandala.xcdatamodel */,
-			);
-			currentVersion = 2279CEF01F8BF3E9003D57AA /* NelsonMandala.xcdatamodel */;
-			path = NelsonMandala.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2279CEDD1F8BF3E9003D57AA /* Project object */;
 }

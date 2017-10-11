@@ -13,8 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var goButton: UIButton!
     
-    let time = Array(1...10)
-    var selectedTime = 0.0
+    let time = Array(1...60)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "BeginMandala",
             let mandalaViewController = segue.destination as? MandalaViewController {
-                mandalaViewController.totalTime = selectedTime
+                mandalaViewController.totalTime = TimeInterval(time[pickerView.selectedRow(inComponent: 0)] * 60)
         }
     }
 
@@ -49,10 +48,5 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(describing: time[row])
     }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedTime = Double(time[row])
-    }
-    
 }
 

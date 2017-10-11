@@ -10,17 +10,15 @@ import UIKit
 
 @IBDesignable class MandalaView : UIView {
     
-    
- var proportion = 0.5
+    @IBInspectable var proportion = 0.0
 
     public func calculateProportion(currentTime: TimeInterval, totalTime: TimeInterval){
         proportion = min(1, currentTime / totalTime)
         setNeedsDisplay()
+        print(currentTime, totalTime, proportion)
     }
     
     override func draw(_ rect: CGRect) {
-        
-        print("draw")
         
         let _ : CGContext! = UIGraphicsGetCurrentContext()
 
