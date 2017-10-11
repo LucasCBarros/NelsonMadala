@@ -29,7 +29,7 @@ class MandalaViewController: UIViewController {
         } else {
             isRunning = false
             timer?.invalidate()
-            pauseButton.setTitle("congratulations!", for: .normal)
+            pauseButton.setTitle("parabéns!", for: .normal)
             pauseButton.backgroundColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 0.20)
         }
     }
@@ -42,7 +42,7 @@ class MandalaViewController: UIViewController {
         if isRunning {
             timer?.invalidate()
             
-            pauseButton.setTitle("commit!", for: .normal)
+            pauseButton.setTitle("voltar!", for: .normal)
             pauseButton.backgroundColor = UIColor.init(red: 255, green: 0, blue: 0, alpha: 0.22)
             self.view.backgroundColor = UIColor.black
             
@@ -56,7 +56,7 @@ class MandalaViewController: UIViewController {
             procrastinationTimer?.invalidate()
             
             timer = Timer.scheduledTimer(timeInterval: frameDuration, target: self, selector: (#selector(MandalaViewController.updateTimer)), userInfo: nil, repeats: true)
-            pauseButton.setTitle("procrastinate...", for: .normal)
+            pauseButton.setTitle("pausar...", for: .normal)
             pauseButton.backgroundColor = UIColor.init(red: 255, green: 255, blue: 0, alpha: 0.22)
             
             self.view.backgroundColor = UIColor.white
