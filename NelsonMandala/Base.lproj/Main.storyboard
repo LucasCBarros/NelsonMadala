@@ -29,7 +29,7 @@
                                         <rect key="frame" x="8" y="569" width="359" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="0.31683433219178081" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Go!">
+                                        <state key="normal" title="Começar!">
                                             <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
