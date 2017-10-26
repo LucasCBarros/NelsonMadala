@@ -15,7 +15,6 @@ import UIKit
     public func calculateProportion(currentTime: TimeInterval, totalTime: TimeInterval){
         proportion = min(1, currentTime / totalTime)
         setNeedsDisplay()
-        print(currentTime, totalTime, proportion)
     }
     
     override func draw(_ rect: CGRect) {
