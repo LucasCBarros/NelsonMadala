@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mandala" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-57-e4c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-57-e4c">
                                 <rect key="frame" x="0.0" y="90" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ygA-57-e4c" secondAttribute="height" multiplier="1:1" id="e86-hN-m2v"/>
@@ -64,6 +64,7 @@
                         <viewLayoutGuide key="safeArea" id="Ohp-sT-97G"/>
                     </view>
                     <connections>
+                        <outlet property="mandala" destination="ygA-57-e4c" id="KGP-2L-a0D"/>
                         <outlet property="mandalaImage" destination="DeE-wd-wx6" id="OgI-Rn-AMu"/>
                         <outlet property="pauseButton" destination="xm8-5t-0LR" id="gLI-i8-0s3"/>
                     </connections>
@@ -73,7 +74,4 @@
             <point key="canvasLocation" x="97" y="130"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="mandala" width="736" height="740"/>
-    </resources>
 </document>

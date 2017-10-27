@@ -11,22 +11,38 @@ import AudioToolbox
 
 class MandalaViewController: UIViewController {
     
+    let mandalaIndexKey = "mandalaIndex"
+    
     let frameDuration = 0.01
     
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var mandalaImage: MandalaView!
+    @IBOutlet weak var mandala: UIImageView!
     
     var currentTime = 0.0
     var totalTime = 0.0
     var timer:Timer?
     var procrastinationTimer:Timer?
     var isRunning = true
+    var mandalaIndex:Int = 0
+    var mandalas:[UIImage] = [#imageLiteral(resourceName: "mandala00"), #imageLiteral(resourceName: "mandala01"), #imageLiteral(resourceName: "mandala02"), #imageLiteral(resourceName: "mandala03"), #imageLiteral(resourceName: "mandala04")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mandalaIndex = UserDefaults.standard.integer(forKey: mandalaIndexKey)
+        mandala.image = mandalas[mandalaIndex]
+        
+        mandalaIndex += 1
+        if (mandalaIndex > mandalas.count) {
+            mandalaIndex = 0
+        }
+        UserDefaults.standard.set(mandalaIndex, forKey: mandalaIndexKey)
+        
+        UIDevice.current.isProximityMonitoringEnabled = true
+        
         timer = Timer.scheduledTimer(timeInterval: frameDuration, target: self, selector: (#selector(MandalaViewController.updateTimer)), userInfo: nil, repeats: true)
         isRunning = true
-        UIDevice.current.isProximityMonitoringEnabled = true
         mandalaImage.calculateProportion(currentTime: currentTime, totalTime: totalTime)
     }
     
