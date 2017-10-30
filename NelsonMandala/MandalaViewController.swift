@@ -11,7 +11,7 @@ import AudioToolbox
 
 class MandalaViewController: UIViewController {
     
-    let mandalaIndexKey = "mandalaIndex"
+    let mandalaIndexKey = "mandalaIndexKey"
     
     let frameDuration = 0.01
     
@@ -31,12 +31,11 @@ class MandalaViewController: UIViewController {
         super.viewDidLoad()
         
         mandalaIndex = UserDefaults.standard.integer(forKey: mandalaIndexKey)
-        mandala.image = mandalas[mandalaIndex]
-        
         mandalaIndex += 1
-        if (mandalaIndex > mandalas.count) {
+        if (mandalaIndex >= mandalas.count) {
             mandalaIndex = 0
         }
+        mandala.image = mandalas[mandalaIndex]
         UserDefaults.standard.set(mandalaIndex, forKey: mandalaIndexKey)
         
         UIDevice.current.isProximityMonitoringEnabled = true
@@ -55,7 +54,7 @@ class MandalaViewController: UIViewController {
                 isRunning = false
                 timer?.invalidate()
                 pauseButton.setTitle("congratulations!", for: .normal)
-                pauseButton.backgroundColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 0.20)
+                pauseButton.backgroundColor = UIColor.init(red: 0, green: 1.0, blue: 0, alpha: 0.20)
             }
         }
     }
@@ -77,7 +76,7 @@ class MandalaViewController: UIViewController {
         timer?.invalidate()
         
         pauseButton.setTitle("commit!", for: .normal)
-        pauseButton.backgroundColor = UIColor.init(red: 255, green: 0, blue: 0, alpha: 0.22)
+        pauseButton.backgroundColor = UIColor.init(red: 1.0, green: 0, blue: 0, alpha: 0.22)
         self.view.backgroundColor = UIColor.black
         
         // Starts the vibration alert timer
@@ -94,7 +93,7 @@ class MandalaViewController: UIViewController {
         
         timer = Timer.scheduledTimer(timeInterval: frameDuration, target: self, selector: (#selector(MandalaViewController.updateTimer)), userInfo: nil, repeats: true)
         pauseButton.setTitle("procrastinate...", for: .normal)
-        pauseButton.backgroundColor = UIColor.init(red: 255, green: 255, blue: 0, alpha: 0.22)
+        pauseButton.backgroundColor = UIColor.init(red: 1.0, green: 1.0, blue: 0, alpha: 0.22)
         
         self.view.backgroundColor = UIColor.white
     }

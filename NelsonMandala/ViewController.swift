@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var goButton: UIButton!
     
-    let time = Array(1...60)
+    let time = Array(0...240)
     
     override func viewDidLoad() {
         super.viewDidLoad()
