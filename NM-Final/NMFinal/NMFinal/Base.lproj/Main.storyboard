@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -86,6 +86,31 @@
                                             <action selector="startStopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2F-gy-TLK"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXT-bU-aGc">
+                                        <rect key="frame" x="315" y="111" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title=".   Stop"/>
+                                        <connections>
+                                            <action selector="clickStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1lZ-rp-MfT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLn-S4-l3Y">
+                                        <rect key="frame" x="-60" y="111" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Pause  ." backgroundImage="buttonBackground">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKc-Xo-jYm"/>
+                                        </connections>
+                                    </button>
+                                    <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwM-bl-GqQ">
+                                        <rect key="frame" x="38" y="21" width="300" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -134,7 +159,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="timerLabel" destination="sb9-dJ-uVt" id="LfR-7i-AZQ"/>
+                        <outlet property="mandalaImage" destination="JwM-bl-GqQ" id="Yw5-qj-N6S"/>
+                        <outlet property="mandalaView" destination="WaX-0O-Xma" id="a1M-PK-fIO"/>
+                        <outlet property="pauseButton" destination="YLn-S4-l3Y" id="hF1-Ct-Izr"/>
+                        <outlet property="startButton" destination="SPa-5C-zTP" id="wAu-cn-Mdm"/>
+                        <outlet property="stopButton" destination="SXT-bU-aGc" id="nzN-Rt-qWe"/>
+                        <outlet property="timerLabel" destination="sb9-dJ-uVt" id="x2E-Rs-Ush"/>
                         <outlet property="typeSelectedLabel" destination="xw8-5z-uGH" id="VDy-K5-ppQ"/>
                     </connections>
                 </viewController>

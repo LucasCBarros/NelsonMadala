@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				962FFB581F8D31970063B2FB /* AppDelegate.swift */,
-				962FFB5A1F8D31970063B2FB /* ViewController.swift */,
 				962FFB861F8D34DD0063B2FB /* mandalaView.swift */,
+				962FFB5A1F8D31970063B2FB /* ViewController.swift */,
 				962FFB5C1F8D31970063B2FB /* Main.storyboard */,
 				962FFB611F8D31970063B2FB /* LaunchScreen.storyboard */,
 				962FFB5F1F8D31970063B2FB /* Assets.xcassets */,
@@ -431,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7J47JG8UC;
+				DEVELOPMENT_TEAM = 987J4BXX78;
 				INFOPLIST_FILE = NMFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nil.NMFinal;
@@ -446,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7J47JG8UC;
+				DEVELOPMENT_TEAM = 987J4BXX78;
 				INFOPLIST_FILE = NMFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nil.NMFinal;
