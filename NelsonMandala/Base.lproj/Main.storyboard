@@ -4,7 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,6 +44,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ih-op-BLe">
+                                        <rect key="frame" x="304" y="0.0" width="63" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Tutorial"/>
+                                        <connections>
+                                            <segue destination="v21-3C-fS9" kind="show" id="s98-a3-3WU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -66,6 +75,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJA-RT-1iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="891" y="127"/>
+        </scene>
+        <!--Scroll View Paginado-->
+        <scene sceneID="DSn-Su-QBB">
+            <objects>
+                <viewController id="v21-3C-fS9" customClass="PagedScrollViewController" customModule="NelsonMandala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j3E-Gu-3l3"/>
+                        <viewControllerLayoutGuide type="bottom" id="GKl-ll-6M5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ar-Ze-04Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dil-vH-vfh">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="711"/>
+                                <connections>
+                                    <outlet property="delegate" destination="v21-3C-fS9" id="Qu0-0E-sx0"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7B8-Mi-DMb">
+                                <rect key="frame" x="168" y="617" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-nJ-aeh">
+                                <rect key="frame" x="330" y="30" width="35" height="30"/>
+                                <state key="normal" title="Pular"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iE4-eA-drf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7B8-Mi-DMb" secondAttribute="centerX" constant="0.5" id="12c-ae-X9O"/>
+                            <constraint firstAttribute="trailing" secondItem="dil-vH-vfh" secondAttribute="trailing" id="Gof-io-Whp"/>
+                            <constraint firstItem="mjw-q9-G3h" firstAttribute="trailing" secondItem="1zg-nJ-aeh" secondAttribute="trailing" constant="10" id="SGu-Hq-mU8"/>
+                            <constraint firstItem="dil-vH-vfh" firstAttribute="top" secondItem="6Ar-Ze-04Z" secondAttribute="topMargin" constant="-64" id="cL1-Ft-ZEh"/>
+                            <constraint firstItem="GKl-ll-6M5" firstAttribute="top" secondItem="7B8-Mi-DMb" secondAttribute="bottom" constant="13" id="clg-0x-G8K"/>
+                            <constraint firstItem="GKl-ll-6M5" firstAttribute="top" secondItem="dil-vH-vfh" secondAttribute="bottom" id="uVn-vQ-BtU"/>
+                            <constraint firstItem="1zg-nJ-aeh" firstAttribute="top" secondItem="j3E-Gu-3l3" secondAttribute="bottom" constant="10" id="vCV-Qz-olS"/>
+                            <constraint firstItem="dil-vH-vfh" firstAttribute="leading" secondItem="6Ar-Ze-04Z" secondAttribute="leading" id="vUT-ka-2ZR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mjw-q9-G3h"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scroll View Paginado" id="DsL-Rd-LW5"/>
+                    <connections>
+                        <outlet property="pageControl" destination="7B8-Mi-DMb" id="Zh6-Oz-gqu"/>
+                        <outlet property="scrollView" destination="dil-vH-vfh" id="JoE-qD-ntu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sP-YQ-yGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="-304"/>
         </scene>
     </scenes>
 </document>
