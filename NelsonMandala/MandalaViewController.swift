@@ -34,7 +34,7 @@ class MandalaViewController: UIViewController {
         mandala.image = mandalas[mandalaIndex]
         
         mandalaIndex += 1
-        if (mandalaIndex > mandalas.count) {
+        if (mandalaIndex > mandalas.count - 1) {
             mandalaIndex = 0
         }
         UserDefaults.standard.set(mandalaIndex, forKey: mandalaIndexKey)
@@ -56,6 +56,25 @@ class MandalaViewController: UIViewController {
                 timer?.invalidate()
                 pauseButton.setTitle("congratulations!", for: .normal)
                 pauseButton.backgroundColor = UIColor.init(red: 0, green: 255, blue: 0, alpha: 0.20)
+                
+                //if let n = UserDefaults.standard.integer(forKey: "completed"){
+                UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "completed") + 1, forKey: "completed")
+                
+                //FAZER O PROMPT AQUI!
+                let alertController = UIAlertController(title: "Enquete", message: "Você realmente completou a tarefa que gostaria?", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "SIM", style: .default, handler:{ (sender) in
+                UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "questionAnswer") + 1, forKey: "questionAnswer")
+                })
+                alertController.addAction(defaultAction)
+                
+                
+                let cancelAction = UIAlertAction(title: "NAO", style: .cancel, handler: nil)
+                alertController.addAction(cancelAction)
+                
+                present(alertController, animated: true, completion: nil)
+                
+                
             }
         }
     }
@@ -66,6 +85,7 @@ class MandalaViewController: UIViewController {
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
         if isRunning {
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "lookAtDeviceCount") + 1, forKey: "lookAtDeviceCount")
             pauseDrawing()
         } else {
             unpauseDrawing()
