@@ -65,6 +65,7 @@ class MandalaViewController: UIViewController {
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
         if isRunning {
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "lookAtDeviceCount") + 1, forKey: "lookAtDeviceCount")
             pauseDrawing()
         } else {
             unpauseDrawing()
