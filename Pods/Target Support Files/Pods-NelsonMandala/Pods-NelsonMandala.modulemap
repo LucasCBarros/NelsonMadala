@@ -1,0 +1,6 @@
+framework module Pods_NelsonMandala {
+  umbrella header "Pods-NelsonMandala-umbrella.h"
+
+  export *
+  module * { export * }
+}
