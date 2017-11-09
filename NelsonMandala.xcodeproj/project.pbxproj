@@ -10,6 +10,7 @@
 		166E44CB1F8D23BC00959EE2 /* MandalaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E44CA1F8D23BC00959EE2 /* MandalaView.swift */; };
 		166E44CD1F8D241800959EE2 /* mandalaScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166E44CC1F8D241800959EE2 /* mandalaScreen.storyboard */; };
 		221459651F8D6B8600AAD240 /* MandalaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221459641F8D6B8600AAD240 /* MandalaViewController.swift */; };
+		226D9BBB1FB51DB400275697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 226D9BBA1FB51DB400275697 /* GoogleService-Info.plist */; };
 		2279CEE91F8BF3E9003D57AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */; };
 		2279CEEB1F8BF3E9003D57AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CEEA1F8BF3E9003D57AA /* ViewController.swift */; };
 		2279CEEE1F8BF3E9003D57AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2279CEEC1F8BF3E9003D57AA /* Main.storyboard */; };
@@ -20,13 +21,16 @@
 		6663A94D1FA8AFA100EAA332 /* Page4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6663A9491FA8AFA100EAA332 /* Page4.xib */; };
 		6663A94E1FA8AFA100EAA332 /* PagedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6663A94A1FA8AFA100EAA332 /* PagedScrollViewController.swift */; };
 		6663A9501FA8B05800EAA332 /* Page3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6663A94F1FA8B05800EAA332 /* Page3.xib */; };
+		F638F6AF8F629A127B90E312 /* Pods_NelsonMandala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32343925974F9D3C65D4EA85 /* Pods_NelsonMandala.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		166E44CA1F8D23BC00959EE2 /* MandalaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandalaView.swift; sourceTree = "<group>"; };
 		166E44CC1F8D241800959EE2 /* mandalaScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mandalaScreen.storyboard; sourceTree = "<group>"; };
 		166E44CE1F8D252400959EE2 /* 86e2a992a86ddc22a7e4a7cd227fa487--tattoo-cover-mandala-tattoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "86e2a992a86ddc22a7e4a7cd227fa487--tattoo-cover-mandala-tattoo.jpg"; sourceTree = "<group>"; };
+		1F863B11FDF805AB960BC6B3 /* Pods-NelsonMandala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NelsonMandala.release.xcconfig"; path = "Pods/Target Support Files/Pods-NelsonMandala/Pods-NelsonMandala.release.xcconfig"; sourceTree = "<group>"; };
 		221459641F8D6B8600AAD240 /* MandalaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandalaViewController.swift; sourceTree = "<group>"; };
+		226D9BBA1FB51DB400275697 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "NelsonMandala/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2279CEE51F8BF3E9003D57AA /* NelsonMandala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NelsonMandala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2279CEE81F8BF3E9003D57AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2279CEEA1F8BF3E9003D57AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,11 +38,13 @@
 		2279CEF21F8BF3E9003D57AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2279CEF51F8BF3E9003D57AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2279CEF71F8BF3E9003D57AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32343925974F9D3C65D4EA85 /* Pods_NelsonMandala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NelsonMandala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6663A9471FA8AFA100EAA332 /* Page1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page1.xib; sourceTree = "<group>"; };
 		6663A9481FA8AFA100EAA332 /* Page2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page2.xib; sourceTree = "<group>"; };
 		6663A9491FA8AFA100EAA332 /* Page4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page4.xib; sourceTree = "<group>"; };
 		6663A94A1FA8AFA100EAA332 /* PagedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedScrollViewController.swift; sourceTree = "<group>"; };
 		6663A94F1FA8B05800EAA332 /* Page3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page3.xib; sourceTree = "<group>"; };
+		FCD52220259B93384FCBA003 /* Pods-NelsonMandala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NelsonMandala.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NelsonMandala/Pods-NelsonMandala.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,18 +52,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F638F6AF8F629A127B90E312 /* Pods_NelsonMandala.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BC23812AE9C4E79B1C7F8FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32343925974F9D3C65D4EA85 /* Pods_NelsonMandala.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2279CEDC1F8BF3E9003D57AA = {
 			isa = PBXGroup;
 			children = (
+				226D9BBA1FB51DB400275697 /* GoogleService-Info.plist */,
 				2279CEE71F8BF3E9003D57AA /* NelsonMandala */,
 				2279CEE61F8BF3E9003D57AA /* Products */,
 				166E44CE1F8D252400959EE2 /* 86e2a992a86ddc22a7e4a7cd227fa487--tattoo-cover-mandala-tattoo.jpg */,
+				FE9CEA572BC123F37D1A98A3 /* Pods */,
+				0BC23812AE9C4E79B1C7F8FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +116,15 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
+		FE9CEA572BC123F37D1A98A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD52220259B93384FCBA003 /* Pods-NelsonMandala.debug.xcconfig */,
+				1F863B11FDF805AB960BC6B3 /* Pods-NelsonMandala.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2279CEFA1F8BF3E9003D57AA /* Build configuration list for PBXNativeTarget "NelsonMandala" */;
 			buildPhases = (
+				9EA5AEF3BC9EF9C250DAACCA /* [CP] Check Pods Manifest.lock */,
 				2279CEE11F8BF3E9003D57AA /* Sources */,
 				2279CEE21F8BF3E9003D57AA /* Frameworks */,
 				2279CEE31F8BF3E9003D57AA /* Resources */,
+				C3BCF55FEB4E3029D1C95072 /* [CP] Embed Pods Frameworks */,
+				77A172C5EAEA8E80B2D52BE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +189,7 @@
 			files = (
 				2279CEF61F8BF3E9003D57AA /* LaunchScreen.storyboard in Resources */,
 				166E44CD1F8D241800959EE2 /* mandalaScreen.storyboard in Resources */,
+				226D9BBB1FB51DB400275697 /* GoogleService-Info.plist in Resources */,
 				6663A9501FA8B05800EAA332 /* Page3.xib in Resources */,
 				2279CEF31F8BF3E9003D57AA /* Assets.xcassets in Resources */,
 				6663A94D1FA8AFA100EAA332 /* Page4.xib in Resources */,
@@ -169,6 +200,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77A172C5EAEA8E80B2D52BE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NelsonMandala/Pods-NelsonMandala-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA5AEF3BC9EF9C250DAACCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NelsonMandala-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3BCF55FEB4E3029D1C95072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NelsonMandala/Pods-NelsonMandala-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NelsonMandala/Pods-NelsonMandala-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2279CEE11F8BF3E9003D57AA /* Sources */ = {
@@ -314,9 +401,10 @@
 		};
 		2279CEFB1F8BF3E9003D57AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD52220259B93384FCBA003 /* Pods-NelsonMandala.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D7J47JG8UC;
 				INFOPLIST_FILE = NelsonMandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauricio.NelsonMandala;
@@ -328,9 +416,10 @@
 		};
 		2279CEFC1F8BF3E9003D57AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F863B11FDF805AB960BC6B3 /* Pods-NelsonMandala.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D7J47JG8UC;
 				INFOPLIST_FILE = NelsonMandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauricio.NelsonMandala;

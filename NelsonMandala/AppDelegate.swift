@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import CoreData
 
 @UIApplicationMain
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UIApplication.shared.isIdleTimerDisabled = true
         //UIApplication.shared.isIdleTimerDisabled = true
+        FirebaseApp.configure()
         return true
     }
 
